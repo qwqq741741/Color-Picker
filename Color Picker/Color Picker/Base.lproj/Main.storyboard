@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Color_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NkC-x2-foX"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNg-ME-hzM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQu-fc-ye4">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mtZ-re-mMF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="37F-Jf-VgO"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eN-V2-q7b">
+                                <rect key="frame" x="166" y="390" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7eN-V2-q7b" firstAttribute="centerX" secondItem="iQu-fc-ye4" secondAttribute="centerX" id="Eac-Pd-9cX"/>
+                            <constraint firstItem="7eN-V2-q7b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Gua-dd-hcI"/>
+                            <constraint firstAttribute="trailing" secondItem="iQu-fc-ye4" secondAttribute="trailing" id="NrB-Wv-h63"/>
+                            <constraint firstAttribute="trailing" secondItem="7eN-V2-q7b" secondAttribute="trailing" constant="167" id="QFO-V4-W9O"/>
+                            <constraint firstItem="iQu-fc-ye4" firstAttribute="top" secondItem="7eN-V2-q7b" secondAttribute="bottom" constant="40" id="g8G-Hp-xCQ"/>
+                            <constraint firstItem="QNg-ME-hzM" firstAttribute="top" secondItem="iQu-fc-ye4" secondAttribute="bottom" id="glv-Dp-Oxe"/>
+                            <constraint firstItem="iQu-fc-ye4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tC8-ks-ToS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="color" destination="7eN-V2-q7b" id="dwx-tU-A8H"/>
+                        <outlet property="colorpick" destination="iQu-fc-ye4" id="FPH-iG-I8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
